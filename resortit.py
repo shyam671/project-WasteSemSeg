@@ -20,14 +20,14 @@ def make_dataset(mode):
         processed_train_mask_path = cfg.DATA.DATA_PATH
         for img_name in os.listdir(processed_train_img_path):
             item = (os.path.join(processed_train_img_path, img_name),
-                    os.path.join(processed_train_mask_path + '/v2_annot/train/', img_name))
+                    os.path.join(processed_train_mask_path + '/labels/train/', img_name))
             images.append(item)
     elif mode == 'val':
         processed_val_img_path = processed_val_path
         processed_val_mask_path = cfg.DATA.DATA_PATH
         for img_name in os.listdir(processed_val_img_path):
             item = (os.path.join(processed_val_img_path, img_name),
-                    os.path.join(processed_val_mask_path + '/v2_annot/val/', img_name))
+                    os.path.join(processed_val_mask_path + '/labels/val/', img_name))
             images.append(item)
     return images
 

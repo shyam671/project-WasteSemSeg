@@ -6,7 +6,7 @@ This respository is a starter-code setup for Resource Constraint Recyclable Wast
 ### Data Prepration
 * Download the [ResortIT dataset.](https://drive.google.com/file/d/14ThGc53okYC61AnTXFAofiYYY8PTZYtl/view?usp=share_link).
 * Unzip the ```dataset.zip``` into the project folder.
-* Modify the roor path of the dataset ```__C.DATA.DATA_PATH```.
+* Modify the root path of the dataset by changing ```__C.DATA.DATA_PATH``` in ```config.py```.
 
 ### Training
 * Use ```python train.py``` command to train the model. 
